@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<link rel="icon" type="image/x-icon" href="img/limpieza.png" />
+    <meta charset="UTF-8" />
+    <title>Login </title>
+	<link rel="stylesheet" type="text/css" href="/css/producto2.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="login-box">
+        <form  action="/login" method="post">
+          <h2>Login</h2>
+
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="text" name="admin" required="required">
+            <label>usuario</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="text" name="password" required="required">
+            <label>Password</label>
+          </div>
+
+          <div class="remember-forgot">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit">Login</button>
+
+
+        </form>
+
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,18 @@
+    body{
+        background-image: url(fondo3.png);
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    h1{
+
+      margin-left:25%;line-height:450px
+			
+    }
+    
+    @media(max-width:600px){
+      body{
+        background-image: url(fondo3.png);
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    }

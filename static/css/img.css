@@ -1,0 +1,117 @@
+    body{
+      height: 50vw;
+      background: #081b29;
+          
+      background-size: cover;
+      background-position: center;
+       
+        justify-content: center;
+        align-items: center;
+    }
+    .heading {
+      font-size: 4.5rem;
+      text-align: center;
+    color:rgb(255, 253, 253);
+  }
+    h1{
+      color:rgb(39, 38, 38);
+			border-radius: 20%;
+			border-color: brown;
+			text-align:center;
+			margin-top:50px;
+			background-color: rgb(203, 251, 251);
+    }
+    .carlitos{
+      background:rgb(29, 246, 221);
+      color:rgb(47, 46, 46);
+      text-decoration: none;
+      padding:6px;
+      margin:20px;
+      border-radius: 20%;
+      border-bottom: 10px;
+      border-color: gray;
+    }
+    .simon{
+      text-align:center;
+    
+      cursor: pointer;
+    }
+    #botonProductos{
+      background:rgb(29, 246, 221);
+      color:rgb(47, 46, 46);
+      text-decoration: none;
+      padding:6px;
+      margin:20px;
+      border-radius: 20%;
+      border-bottom: 10px;
+      border-color: gray;
+    }
+    form{
+      box-shadow: 0 0 50px 0 #00a6bc;
+      background: #0d3653;
+border-radius: 15px;
+border: 2px solid rgba(255, 255, 255, 0.5);
+
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(15px);
+
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        width:30%;
+        height:40vh;
+        margin:50px auto;
+        border-radius:20%;
+		
+    }
+    input{
+    	padding:10px;
+    	margin:10px;
+		border-radius: 10%;
+    }
+    label{
+		text-align:center;
+    	font-size: 30px;
+    	font-weight: bold;
+		border-radius: 10%;
+    }
+    @media(max-width:600px){
+      body{
+        height: 50vw;
+        background: #081b29;
+            
+        background-size: cover;
+        background-position: center;
+         
+          justify-content: center;
+          align-items: center;
+    }
+    
+    form{
+		
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        background: none;
+        width:50%;
+        height:40vh;
+        margin:50px auto;
+        border-radius:20%;
+        padding: 10px;
+		
+    }
+    input{
+    	padding:20px;
+    	margin:5%;
+		border-radius: 10%;
+    }
+    label{
+		text-align:center;
+    	font-size: 30px;
+    	font-weight: bold;
+		border-radius: 10%;
+    }
+    }

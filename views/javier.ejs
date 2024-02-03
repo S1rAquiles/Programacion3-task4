@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/limpieza.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" type="text/css" href="/css/clientes2.css">
+    <script type="text/javascript" src="/js/alert.js"></script>
+    <title>caca</title>
+   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G-37QEMCEWYD"></script>
+    <!--Google Analytics-->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-37QEMCEWYD');
+</script>
+<!--Schema Markup-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Limpieza",
+    "datePublished": "2024-01-15",
+    "author": {
+      "@type":"Person",
+      "name": "Angel Cutt"
+  },
+  "publisher":{
+      "@type": "Organization",
+      "name": "productClean",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://images.pexels.com/photos/4440533/pexels-photo-4440533.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+},
+"image": {
+  "@type": "ImageObject",
+  "url": "https://images.pexels.com/photos/4440533/pexels-photo-4440533.jpeg?auto=compress&cs=tinysrgb&w=400",
+  "width": "700",
+  "height": "500"
+},
+"description": "Productos de limpieza con la mas alta eficiencia"
+}
+</script>
+</head>
+<body>
+    <div class='clasePadre'>
+
+
+        <!-- Navigation-->
+        <nav class="navv" style='background: -webkit-linear-gradient(to right, #1f1152, #d2d4de);background: linear-gradient(to right,#3b18e7, #061d47)'>
+            <div class="nocontainer">       
+                <div class="row-----">
+                        <input class="form-control" id="buscarPrincipal" type="search" placeholder="Buscar Producto..." aria-label="Buscar Producto..."/>
+                        <button onclick="buscarProductos()"  id='boton3'>Buscar</button>
+                </div>              
+            </div>
+        </nav>
+        <section style='width:100%;'>
+            <div class="simon">
+                <a id='david' href="/">Volver</a>
+
+            </div>
+
+  <section style='width:100%;'>
+    <div class="container">
+
+    </div>
+</section>
+<!-- Portfolio Grid-->
+
+
+<section class="section">
+    
+    <h2 class="heading">Bienvenido a la <span>Tienda</span></h2>
+    <div class="my-5">
+        <div class="row justify-content-center">
+
+            <div class="simon">
+                
+                <button id='ordenarBtn'>Ascendente</button> 
+                  <button id='david'  onClick="cuadricula()">Cambio de vista</button>
+                <button id='ordenarBtn2'>Descendente</button>  
+            </div>
+         
+
+         <div id='co'>
+                
+         </div>
+
+         <div class='product' id='listaDeProductos'>
+
+            <%for(let x = 0;x < producto.length;x++){%>
+
+            <div class='productooo'>
+
+                <div style='display:flex;flex-direction: column;justify-content:center;align-items: center;width:100%;'>
+
+                    <img src="<%= producto[x].imagen_url %>" class='imagen' id='imagenSelector'>
+
+
+                    <div id='NPB'>
+
+                     <div style='display:flex;flex-direction: column;justify-content:center;align-items:center; color: antiquewhite'>
+                        <strong><p>Nombre:</strong><%= producto[x].nombre %></p>
+                        <strong><p>Precio: </strong><span style='color:green'><%= producto[x].precio %> $</span></p>
+
+                    </div>
+
+                    <div class='comprarDetalles'>
+                     
+                <div style='display:flex;justify-content: center;align-items:center; ;'>
+                    <a href="/comprar/<%=producto[x].producto_id%>"><img src="/img/carrito.png" width="30"></a>
+
+                     <a href="/detalles/<%=producto[x].producto_id%>" style='margin-top:7px;margin-left:8px;'><img src="/img/img.png" width="30"></a> 
+                </div>
+                     
+
+                     <div class='contenedorPuntuacion'>
+
+                   <p class="puntuacion" data-producto_id='<%=producto[x].producto_id%>' data-puntuacion='<%=producto[x].puntuacion%>'><% if(producto[x].puntuacion !== null){ %>
+                    Puntuación Total: <%=producto[x].puntuacion%>
+                   <% }else{%>
+                    Sin Puntuación
+                   <% } %> 
+                   </p>
+
+
+                   </div>
+
+            
+
+                   <div class='estrellas'>
+                     <img src="/img/punto.png" width="20" class="estrella" data-valor='1' title="1">
+                     
+                     <img src="/img/punto.png" width="20" class="estrella" data-valor='2' title="2">
+
+                     <img src="/img/punto.png" width="20" class="estrella" data-valor='3' title="3">
+
+                     <img src="/img/punto.png" width="20" class="estrella" data-valor='4' title="4">
+
+                     <img src="/img/punto.png" width="20" class="estrella" data-valor='5' data-producto_id='<%=producto[x].producto_id%>' title="5"> 
+                 </div>   
+
+                 </div>
+
+
+
+
+             </div>
+
+
+
+         </div>
+
+
+
+     </div>
+     <% } %>
+     <!-------------------->
+     <table border class='table'>
+
+        <thead>
+            <tr style='border:1px solid rgb(245, 40, 40); background: -webkit-linear-gradient(to right, #6842ef, rgb(127, 219, 52));background: linear-gradient(to right, #6842ef, rgb(52, 130, 219))'>
+                
+                <th class='column'>Imagen</th>
+                <th class='column'>Nombre</th>
+                <th class='column'>Codigo</th>
+                <th class='column'>Precio</th>
+                <th class='column'>Descripcion</th>
+                <th class='column'>Calidad</th>
+                <th class='column'>Cantidad</th>
+                <th class='column'>Opciones</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+        <%for(let u = 0;u < producto.length;u++){%>
+         <tr class='tr' style='border:1px solid black;background: -webkit-linear-gradient(to right, #6842ef, rgb(8, 27, 79));background: linear-gradient(to right, #6842ef, rgb(17, 14, 98))'>
+            
+            <td class='column'><img src="<%= producto[u].imagen_url %>" style='width:100%;height:17vh;border: solid 2px black'></td>
+             <td class='column'><%= producto[u].nombre %></td>
+             <td class='column'><%= producto[u].codigo %></td>
+             <td class='column'><%= producto[u].precio %></td>
+             <td class='column'><%= producto[u].descripcion %></td>
+             <td class='column'><%= producto[u].calidad %></td>
+             <td class='column'><%= producto[u].cantidad %></td>
+            <td>
+                <a href="/comprar/<%=producto[u].producto_id%>" style='margin-top:7px;margin-left:8px;'><img src="/img/carrito.png"  width="30"></a>
+                     <a href="/detalles/<%=producto[u].producto_id%>" style='margin-top:7px;margin-left:8px;'><img src="/img/img.png" width="30"></a>
+                 </td>
+         </tr> 
+         <% } %>
+        </tbody>
+         </table>
+           <%for(let l = 0 ; l < producto.length; l++){%>
+        <ul class='ULtabla3'>
+            <li class='LItabla3'><img src="<%= producto[l].imagen_url %>" style='width:40%; border: solid 3px black'></li>
+            <li class='LItabla3'><span>Nombre: </span><span><%= producto[l].nombre %></span></li>
+            <li class='LItabla3'><span>Codigo: </span><span><%= producto[l].codigo %></span> </li>
+            <li class='LItabla3'><span>Precio: </span><span style='color:rgb(90, 148, 49)'><%= producto[l].precio %> $</span> </li>
+            <li class='LItabla3'><span>Descripcion: </span><span><%= producto[l].descripcion %></span></li>
+            <li class='LItabla3'><span>Calidad: </span><span><%= producto[l].calidad %></span></li>
+            <li class='LItabla3'><span>Cantidad: </span><span><%= producto[l].cantidad %></span></li>
+            <li class='LItabla3'><span>Categoria: </span><span><%= producto[l]. categoria_id %></span></li>
+            <li class='LItabla3'>
+                <div style='display:flex;justify-content:center;align-items:center;width:20%;'>
+                    <a href="/comprar/<%=producto[l].producto_id%>"><img src="/img/carrito.png" class='imgCarrito' width="30"></a>
+                </div>
+                <div style='display:flex;justify-content:center;align-items:center;width:20%;'>
+                     <a href="/detalles/<%=producto[l].producto_id%>" style='margin-top:7px;margin-left:8px;'><img src="/img/lista.png" style='width:100%;'></a>
+                </div>
+               
+            </li>
+        </ul>
+        <% } %>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+
+</section>
+<script type="text/javascript" src='/js/ascendente.js'></script>
+<script type="text/javascript" src='/js/descendente.js'></script>
+<script type="text/javascript" src='/js/puntuaciones.js'></script>
+<script type="text/javascript">
+   fetch('/transaction')
+   .then(res=>res.json())
+   .then(respuesta=>{
+    if(respuesta.message !== false){
+       console.log(respuesta);
+       Swal.fire(respuesta.transaction.message)
+
+       .then(() =>{
+        // Aquí la alerta se ha cerrado
+        console.log("Alerta cerrada");
+        fetch('/eliminarTransaction')
+        .then(res=> res.json())
+        .then(respuesta2=>{
+            console.log(`Message : ${respuesta2.message}`);
+        })
+        .catch(error => {
+               console.error('*_*/-[Error]-/*_*:', error);
+        });
+    }); 
+
+       console.log(respuesta.transaction.message,'respuesta del server');  
+   }else{
+    console.log('No se recibio respuesta of the transaction'); 
+}
+
+})
+</script>
+
+<!-- Core theme JS-->
+<script src="/js/script.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * -->
+</div>
+</body>
+</html>

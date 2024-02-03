@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="img/limpieza.png" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crear cuenta</title>
+	<link rel="stylesheet" type="text/css" href="/css/nova.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+	<form class="form" action="iniciarEmail" method="post">
+		<h1 class="title">Inicio</h1>
+		<div class="inp">
+			<label for="iniciar_email"></label>
+			<input type="email" name="email" class="input" placeholder="email" required>
+			<i class="fa-solid fa-user"></i>
+		</div>
+
+		<div class="inp">
+			<label for="iniciar_clave"></label>
+			<input type="password" name="password" class="input" placeholder="Clave"required>
+			<i class="fa-solid fa-lock"></i>
+		</div>
+
+			
+
+			<input type="submit" name="enviar" value="Iniciar" class="submit">	
+			<p class="footer">¿No tienes una cuenta? registrate aqui </p>
+			<a href='/user' class="link">crear cuenta</a>
+			<a href="/recuperarPassword">Restablecer Password</a>
+	</form>
+	<div></div>
+	<div class="banner">
+	<h1 class="wel-text">bienvenido <br></h1>
+	<p class="para">Gracias por corregir mi proyecto <br> :) <br>login</p>
+	</div>
+
+
+
+	<script type="text/javascript">
+	   fetch('/mensageDeRegistro')
+	   .then(res=> res.json())
+	   .then(respuesta=>{
+		   if(respuesta.mensaje == false){
+			   console.log('No se recibio nada de la ruta "mensajeDeRegistro" ');
+		   }else{
+				 console.log('--_--_--'+respuesta.mensaje+'--_--_--');
+				 Swal.fire('¡Se ha Registrado Exitosamente!')
+				 .then(()=>{
+					  fetch('/eliminarMensajeRegistro')
+					  .then(res=>res.json())
+					  .then(respuesta2=>{
+						  if(respuesta2.mensaje === false){
+							  console.log('mensaje inexistente');
+						  }			  
+					  })
+				 })
+		   }
+	   })
+   </script>
+
+</div>
+</body>
+</html>
+
+   

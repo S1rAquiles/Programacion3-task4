@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Compras</title>
+ <link rel="icon" type="image/x-icon" href="img/limpieza.png" />
+<link rel="stylesheet" type="text/css" href="/css/producto.css">
+</head>
+<body>
+
+
+
+  <h2 class="heading">Compras <span>Realizadas</span></h2>
+  <div class="table">
+    <table border>
+          <tr style='border:3px solid rgb(33, 5, 251); background: -webkit-linear-gradient(to right, #6842ef, rgb(122, 52, 219)); background: linear-gradient(to right, #6842ef, rgb(88, 52, 219))'>
+            <th>ID</th>
+            <th>Tag Usuario</th>
+            <th>Apellido</th>
+            <th>C.I:</th>
+            <th>Producto</th>
+            <th>Cliente_id</th>
+            <th>Producto_id</th>
+            <th>Cantidad</th>
+            <th>Total_pagado</th>
+            <th>fecha</th>
+            <th>ip_cliente</th>
+            <th>codigo</th>
+            <th>Nºtarjeta</th>
+            <th>Cvv</th>
+            <th>MesV</th>
+            <th>year</th>
+            <th>currency</th>
+            <th>Descripcion</th>
+          </tr>
+          <%for(const compra of modelo){%>
+            <tr>
+              <td style='border:1px solid rgb(245, 40, 40); background: -webkit-linear-gradient(to right, #6842ef, rgb(127, 219, 52));background: linear-gradient(to right, #6842ef, rgb(52, 130, 219))'><%=compra.compras_id%></td>
+              <td><%=compra.nombre_de_usuario%></td>
+              <td><%=compra.apellido%></td>
+              <td><%=compra.cedula%></td>
+              <td><%=compra.marca_dispositivo%></td>
+              <td><%=compra.cliente_id%></td>
+              <td><%=compra.producto_id%></td>
+              <td><%=compra.cantidad%></td>
+              <td><%=compra.total_pagado%></td>
+              <td><%=compra.fecha%></td>
+              <td><%=compra.ip_cliente%></td>
+              <td><%=compra.codigo%></td>
+              <td><%=compra.numeroT%></td>
+              <td><%=compra.cvv%></td>
+              <td><%=compra.mesV%></td>
+              <td><%=compra.year%></td>
+              <td><%=compra.currency%></td>
+              <td><%=compra.descripcion%></td>
+             </td>
+            </tr>
+           <%}%>
+        </table>
+       
+  </div>
+  <div class="simon">
+    
+    <a href="/logout2" id='botonProductos'>Cerrar</a>
+    <a href='/usuario' id='botonProductos'>usuarios registrados</a>
+    <a href="/compras" id='botonProductos'>Compras realizadas</a>
+    <a href="/productos" id='botonProductos'>Productos en Stock</a>
+    <a href='/categorias' id='botonProductos'>Categorias</a>
+
+  </div>
+</body>
+</html>

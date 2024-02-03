@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+   }
+   
+   body{
+   background-image:url(fondo3.png);
+   background-size:cover;
+   background-attachment:fixed;
+   margin: 0;
+   padding: 0;
+   }
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .order-history {
+    width: 80%;
+  }
+  
+  .order-history h3 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  #footer{
+    text-align: center;
+    color:rgb(0, 0, 0);
+  }
+  footer{
+    padding:2px;
+    font:30px 'Gamer';
+    font-weight:bold;
+    border:1px solid black;
+    background:rgba(48, 86, 168, 0.7);
+    
+  }
+  section{
+      background:rgba(99, 147, 243, 0.7);
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    width:90%;
+    height:100%;
+    margin:50px auto;
+    font-size:25px;
+    margin:10px;
+    border:2px solid rgb(145, 40, 40);
+    color:white;
+  
+  
+  }
+  .img{
+    width:30%;
+    height:30%;
+    margin:20px;
+    border-radius:50%;
+  }
+  h2{
+    margin-left:20px;
+    font-size: 40px;
+  }
+  #ContenedorImgNombre{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+  }
+  p{
+    margin:20px;
+  }
+  aside{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid;
+    width:30%;
+    margin:10px;
+    background:rgb(183, 210, 250);
+  }
+  #contenedorP{
+    display:flex;
+    align-items:center;
+    margin:50px;
+    margin-bottom:0px;
+    font-weight:bold;
+  }
+  .imgg{
+    margin:0;
+    background-size:cover;
+    width:100%;
+    height:50%;
+  }
+  
+  h1{
+    border:1px solid black;
+    background:rgba(48, 86, 168, 0.7);
+  }
+  
+  .flex-principal{
+    display:flex;
+    flex-direction:column;
+    height:75%;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    background:rgba(80, 123, 231, 0.7);
+  }
+  
+  input{
+    height:5vh;
+    text-align:center;
+    background-color: azure;
+  
+  }
+  #cancelar{
+    margin-top:20px;
+    height:10%;
+  }
+  #editorcentrall{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+  }
+  #botonProductos{
+    background:rgb(56, 195, 172);
+    color:black;
+    text-decoration: none;
+    padding:6px;
+    border-radius: 20%;
+    
+  }
+  label{
+    font-weight:bold;
+    font-size:25px;
+  }
+  #update{
+    cursor: pointer;
+  }
+  #eliminarRegistro{
+    cursor:pointer;
+    background:rgb(56, 195, 172);
+    color:black;
+    text-decoration: none;
+    padding:6px;
+    border-radius: 20%;
+  }
+  
+  @media(max-width:600px){
+  
+    .flex-principal{
+      display:flex;
+      flex-direction:column;
+      height:75%;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      background:rgba(116, 153, 245, 0.7);
+    }
+  }
+  

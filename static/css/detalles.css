@@ -1,0 +1,53 @@
+
+   body{
+    height: 50vw;
+    background: #081b29;
+      
+  background-size: cover;
+  background-position: center;
+   
+    justify-content: center;
+    align-items: center;
+    }
+    .heading {
+        font-size: 4.5rem;
+        text-align: center;
+      color:rgb(255, 253, 253);
+    }
+img{
+    width:25%;
+    height: auto;
+    margin:20px;
+    border-radius: 50%;
+      border: 5px solid black;
+}
+img:hover {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: rgb(25, 0, 255) 5px 14px 25px;
+  }
+#contenedor{
+    display:flex;
+    justify-content: center;
+ width: 80%;
+ margin:70px auto;
+}
+h1{
+    text-align: center;
+    line-height:100px;
+    font:50px 'fuenteC';
+}
+a{
+    text-decoration:none;
+    color:black;
+    font:30px 'fuenteC';
+    margin-left:20px;
+}
+ @media screen and (max-width: 720px){
+     img{
+    width:70%;
+    height: auto;
+    margin:20px;
+    border-radius: 50%;
+      border: 5px solid black;
+}
+ }
