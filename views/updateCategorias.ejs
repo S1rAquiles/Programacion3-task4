@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Categorias</title>
+	<link rel="stylesheet" type="text/css" href="/css/update.css">
+</head>
+<body>
+<h1 id="crear">Actualizar Categoria</h1>
+
+<form action="/updateCategoria/<%=modelo.id%>" method="post">
+
+	<div class='flex-principal'>
+	<label>Nombre</label>
+	<input type="text" name="nombre" value="<%=modelo.nombre%>">
+
+    </div>
+
+
+     <div id="cancelar">
+	    <input type="submit" value="Actualizar" id="update">
+        <a href="/categorias" id="botonProductos">Volver</a>
+     </div>
+
+</form>
+ 
+
+
+</body>
+</html>
+
+<h2></h2>

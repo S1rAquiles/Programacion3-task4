@@ -1,0 +1,105 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta charset="iso-8559-1"/>
+    <meta name= "description" content="pagina de enseñanza"/>
+    <meta name="keywords" content="html5,javascript,diseño web"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/tienda.css">
+    <link rel="stylesheet" type="text/css" href="/css/producto2.css">
+    <title>Productos</title>
+  </head>
+  <body>
+  <!--*****************************************-->
+  
+
+ 
+
+  <h1><span class="title">❤❤❤</span>Productos <%=modelo.length%><span class="title">❤❤❤</span></h1>
+
+  
+  <div id="grid-container">
+    <div id="container-img-icon">
+      <span class="span">😎😎😎😎</span><img src="/img/prote.png"><span class="span">😎😎😎😎</span>
+   </div>
+   <!--***************************************************************-->
+   
+     <%for(const producto of modelo){%>
+  <fieldset id="fieldset1" class="ubicar-F ubicar1">
+    <legend id="legend1" class="legenddd">mercancia:<%=producto.producto_id%></legend>
+    <div id="centrarDiv">
+      <div class="cajon">
+            
+        <div class="toy">
+          <a>nombre:  .</a>
+          <a><%=producto.nombre%></a>
+        </div>
+        <div class="toy">
+          <a>codigo:  .</a>
+          <a><%=producto.codigo%></a>
+        </div>
+        <div class="toy">
+          <a>precio:  .</a>
+          <a><%=producto.precio%></a>
+        </div>
+        <div class="toy">
+          <a>Descripcion:  .</a>
+          <a><%=producto.descripcion%></a>
+        </div>
+        <div class="toy">
+          <a>Calidad:  .</a>
+          <a><%=producto.calidad%></a>
+        </div>
+        <div class="toy">
+          <a>Cantidad:  .</a>
+          <a><%=producto.cantidad%></a>
+        </div>
+        <button>comprar</button>
+          
+          
+
+      </div>
+
+    </div>
+  </fieldset>
+   
+       <%}%>
+  <!--*****************************************-->
+  <fieldset id="fieldset2" class="ubicar-F ubicar2">
+    <legend id="legend2" class="legenddd">Lista De productos</legend>
+    <div class="table">
+      <table border>
+            <tr>
+
+              <th>Nombre</th>
+              <th>Codigos</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+              <th>Calidad</th>
+              <th>Cantidad</th>
+         
+            </tr>
+            <%for(const producto of modelo){%>
+              <tr>
+
+                <td><%=producto.nombre%></td>
+                <td><%=producto.codigo%></td>
+                <td><%=producto.precio%></td>
+                <td><%=producto.descripcion%></td>
+                <td><%=producto.calidad%></td>
+                <td><%=producto.cantidad%></td>
+                
+  
+              </tr>
+             <%}%>
+          </table>
+
+  </fieldset>
+  <div class="simon">
+
+    <a id='botonProductos' href="/">Volver</a>
+</div>
+ 
+  </body>
+</html>
