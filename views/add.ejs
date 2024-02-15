@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <meta charset="utf-8">
+    <meta charset="iso-8559-1"/>
+    <meta name= "description" content="pagina de enseñanza"/>
+    <meta name="keywords" content="html5,javascript,diseño web"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/update.css">
+   <title>Update</title>
+</head>
+ <h1 id="crear">Agregar Producto</h1>
+
+<form action="/addPost" method="post">
+<div class='flex-principal'>
+<!------------------------------------------->
+<div id="editorcentrall">
+<!------------------------------------------>
+<label for="nombre">Nombre</label>
+
+<input type="text" autofocus name="nombre" placeholder="Nombre" />
+
+<!------------------------------------------>
+
+<label for="codigo">Codigo</label>
+
+<input name="codigo" type="number" placeholder=" Codigo" />
+
+<!--------------------------------------------->
+
+<label for="precio">Precio</label>
+<input type="number" name="precio" placeholder=" Precio">
+
+<!----------------------------------------------------->
+<label for="descripcion">Descripcion</label>
+<input type="text" name="descripcion" placeholder=" Descripcion">
+
+<!----------------------------------------------------->
+<label for="calidad">Calidad</label>
+<input type="text" name="calidad" placeholder=" Calidad">
+<!----------------------------------------------------->
+<label for="cantidad">Cantidad</label>
+<input type="number" name="cantidad" placeholder=" Cantidad">
+<!--------------------------------------------------->
+
+<!----------------------------------------------------->
+</div>
+
+<!------------------------------------------->
+<div id="cancelar">
+	<input type="submit" value="Agregar" id="update">
+    <a href="/productos" id="botonProductos">Volver</a>
+</div>
+
+</div>
+</form>
+</body>
+<%- include('footer') -%>
+</html>

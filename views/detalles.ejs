@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="img/limpieza.png" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Detalles</title>
+    <link rel="stylesheet" type="text/css" href="/css/detalles.css">
+</head>
+<body>
+  <h1>Imagenes del Producto</h1>
+
+   <div id='contenedor'>
+  <% for(let m = 0;m < imagenes.length;m++){ %>
+   <img src="<%= imagenes[m].url%>">
+  <% } %>
+
+   </div>
+   <a href="/clientes">Volver</a>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+	background-image: url(fondo3.png);
+	background-size:cover;
+	background-attachment: fixed;
+}
+#login{
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items:center;
+	background:rgba(159, 158, 158, 0.7);
+	width:50%;
+	height:40vh;
+	margin:50px auto;
+	border-radius:20%;
+}
+label{
+	font-weight: bold;
+	font-size: 30px;
+	color:rgba(233, 36, 36, 0.537);
+}
+h1{
+	text-align:center;
+	font-weight: unset;
+}
+form{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+input{
+padding:8px;
+border-radius:10px 10px 10px 10px;
+border-color: aqua;
+color: rgb(0, 0, 0)
+}
+#iniciar{
+	margin-top:10px;
+	padding: 7px;
+	border-radius:10px 10px 10px 10px;
+}
+#casco{
+	cursor: pointer;
+	margin-top:20px;
+}
+
+#casco:hover{
+	box-shadow: rgb(47, 0, 255) 10px 14px 15px;
+}
+a{
+	background-color: rgb(238, 171, 2);
+	padding:6px;
+	border-radius:10px ;
+	text-align: center;
+}
+a:hover {
+
+	box-shadow: rgb(47, 0, 255) 10px 14px 15px;
+  }
+@media(max-width:600px){
+	body{
+		background-image: url(fondo3.png);
+		background-size:cover;
+		background-attachment: fixed;
+	}
+	#login{
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:center;
+		background:rgba(159, 158, 158, 0.7);
+		width:80%;
+		height:80%;
+		margin:12.5px auto;
+		border-radius:20%;
+	}
+	label{
+		font-weight: bold;
+		font-size: 30px;
+		color:rgba(233, 36, 36, 0.537);
+	}
+	h1{
+		text-align:center;
+		font-weight: unset;
+	}
+	form{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	input{
+	padding:8px;
+	border-radius:10px 10px 10px 10px;
+	border-color: aqua;
+	color: rgb(0, 0, 0)
+	}
+	#iniciar{
+		margin-top:10px;
+		padding: 7px;
+		border-radius:10px 10px 10px 10px;
+	}
+	
+}

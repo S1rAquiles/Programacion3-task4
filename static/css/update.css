@@ -1,0 +1,173 @@
+@font-face{
+	font-family:'Gamer';
+	src:url('/fuentes/gato.ttf');
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+h1{
+ margin-top:30px;
+ text-align:center;
+ line-height:100px;
+ font-weight:bold;
+ color:rgb(0, 0, 0);
+ font:50px 'Gamer';
+}
+body{
+    height: 50vw;
+	background: #081b29;
+      
+  background-size: cover;
+  background-position: center;
+   
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+	text-align: center;
+	color:rgb(0, 0, 0);
+}
+footer{
+	padding:2px;
+	font:30px 'Gamer';
+	font-weight:bold;
+	border:1px solid black;
+	background:rgba(48, 86, 168, 0.7);
+	
+}
+section{
+    background:rgba(99, 147, 243, 0.7);
+	display:flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	width:90%;
+	height:100%;
+	margin:50px auto;
+	font-size:25px;
+	margin:10px;
+	border:2px solid rgb(145, 40, 40);
+	color:white;
+
+
+	background: #081b29;
+	border-radius: 15px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(15px);
+	
+}
+.img{
+	width:30%;
+	height:30%;
+	margin:20px;
+	border-radius:50%;
+}
+h2{
+	margin-left:20px;
+	font-size: 40px;
+}
+#ContenedorImgNombre{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+p{
+	margin:20px;
+}
+aside{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border:2px solid;
+	width:30%;
+	margin:10px;
+	background:rgb(183, 210, 250);
+}
+#contenedorP{
+	display:flex;
+	align-items:center;
+	margin:50px;
+	margin-bottom:0px;
+	font-weight:bold;
+}
+.imgg{
+	margin:0;
+	background-size:cover;
+	width:100%;
+	height:50%;
+}
+
+h1{
+	border:1px solid black;
+	background:rgba(48, 86, 168, 0.7);
+}
+
+.flex-principal{
+	display:flex;
+	flex-direction:column;
+	height:75%;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	background:rgba(80, 123, 231, 0.7);
+}
+
+input{
+	height:5vh;
+	text-align:center;
+	background-color: azure;
+
+}
+#cancelar{
+	margin-top:20px;
+	height:10%;
+}
+#editorcentrall{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+#botonProductos{
+	background:rgb(56, 195, 172);
+	color:black;
+	text-decoration: none;
+	padding:6px;
+	border-radius: 20%;
+	
+}
+label{
+	font-weight:bold;
+	font-size:25px;
+}
+#update{
+	cursor: pointer;
+}
+#eliminarRegistro{
+	cursor:pointer;
+	background:rgb(56, 195, 172);
+	color:black;
+	text-decoration: none;
+	padding:6px;
+	border-radius: 20%;
+}
+
+@media(max-width:600px){
+
+	.flex-principal{
+		display:flex;
+		flex-direction:column;
+		height:75%;
+		justify-content:center;
+		align-items:center;
+		color:white;
+		background:rgba(116, 153, 245, 0.7);
+	}
+}
